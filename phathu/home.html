@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHATHU SNEAKERS</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+header{
+    width:100%;
+    background:black;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:70px;
+    border-radius:15px;
+}
+
+.logo h1{
+    font-size:24px;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#25D366;
+}
+
+.hero{
+    min-height:90vh;
+    background:url('https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1400&auto=format&fit=crop') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.72);
+    padding:40px;
+    border-radius:16px;
+    max-width:850px;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+    line-height:1.5;
+}
+
+.btn{
+    background:#25D366;
+    color:white;
+    padding:14px 24px;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#1da851;
+}
+
+section{
+    padding:70px 5%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.product{
+    background:#161616;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+}
+
+.product img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.category{
+    color:#cfcfcf;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#25D366;
+    font-size:20px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+select{
+    width:100%;
+    padding:11px;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:12px;
+}
+
+.about-text p{
+    line-height:1.8;
+    margin-top:15px;
+}
+
+.delivery{
+    background:#111;
+    border-radius:12px;
+    padding:40px;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:black;
+    padding:25px;
+    text-align:center;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+@media(max-width:768px){
+    nav{
+        display:none;
+    }
+
+    .logo h1{
+        font-size:18px;
+    }
+
+    .hero h2{
+        font-size:34px;
+    }
+
+    .hero-content{
+        padding:28px 20px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="LOGO.png" alt="PHATHU SNEAKERS Logo">
+        <h1>PHATHU SNEAKERS</h1>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>PHATHU SNEAKERS & STREETWEAR</h2>
+        <p>
+            Sneakers, Diesel clothing, Bafana Bafana jerseys, Nike, Jordan, Converse, Vans,
+            T-shirts, hoodies, caps and tracksuits at affordable prices.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/27676465867?text=Hello%20PHATHU%20SNEAKERS,%20I%20want%20to%20order"
+        target="_blank">
+            ORDER ON WHATSAPP
+        </a>
+    </div>
+</section>
+
+<section id="shop">
+<h2 class="section-title">Featured Products</h2>
+
+<div class="products" id="productList"></div>
+</section>
+
+<section id="about">
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1200&auto=format&fit=crop" alt="Streetwear clothing">
+
+        <div class="about-text">
+            <h2 class="section-title">About Us</h2>
+            <p>
+                PHATHU SNEAKERS is a South African sneaker and streetwear store focused on affordable fashion and clean urban style.
+            </p>
+            <p>
+                We sell sneakers, Diesel clothing, Bafana Bafana jerseys, Nike, Jordan, Converse, Vans, T-shirts, hoodies, caps and tracksuits.
+            </p>
+            <p>
+                Affordable pricing. Fast response. Easy WhatsApp ordering.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="delivery">
+        <h2 class="section-title">Delivery</h2>
+        <p>We deliver nationwide across South Africa.</p>
+        <br>
+        <p>Orders are confirmed through WhatsApp and delivered fast and safely.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>WhatsApp Orders Available 24/7</p>
+        <br>
+        <a class="btn" href="https://wa.me/27676465867" target="_blank">
+            CHAT ON WHATSAPP
+        </a>
+
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 PHATHU SNEAKERS | All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/27676465867" target="_blank">☎</a>
+
+<script>
+const phoneNumber = "27676465867";
+
+const products = [
+    {
+        name: "Nike Free RN Flyknit",
+        category: "Sneakers",
+        price: "R950",
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Nike Air Max 1",
+        category: "Sneakers",
+        price: "R999",
+        image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Nike Air Force 1 Low",
+        category: "Sneakers",
+        price: "R850",
+        image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Jordan Sneakers",
+        category: "Nike/Jordan",
+        price: "R1000",
+        image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Puma RS-X",
+        category: "Sneakers",
+        price: "R700",
+        image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Nike Blazer",
+        category: "Sneakers",
+        price: "R900",
+        image: "https://images.unsplash.com/photo-1605348532760-6753d2c43329?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Converse All Star",
+        category: "Converse",
+        price: "R800",
+        image: "https://images.unsplash.com/photo-1494496195158-c3becb4f2475?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Vans Old Skool",
+        category: "Vans",
+        price: "R850",
+        image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Puma Sneakers",
+        category: "Sneakers",
+        price: "R700",
+        image: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "NIKE AIR FORCE 1 HIGH",
+        category: "Sneakers",
+        price: "R900",
+        image: "https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1200&auto=format&fit=crop",
+        sizes: "shoes"
+    },
+    {
+        name: "Diesel T-shirt",
+        category: "Diesel Clothing",
+        price: "R500",
+        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+        name: "Diesel Hoodie",
+        category: "Diesel Clothing",
+        price: "R950",
+        image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+        name: "Diesel Jeans",
+        category: "Diesel Clothing",
+        price: "R1000",
+        image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+    name: "Bafana Bafana Home Jersey 2026",
+    category: "Football Jerseys",
+    price: "R350",
+    image: "https://assets.adidas.com/images/w_940%2Cf_auto%2Cq_auto/7d662d1f4ca846a1b78ce2b82c07455e_9366/KY2209_21_model.jpg",
+    sizes: "clothes"
+},
+{
+    name: "Bafana Bafana Away Jersey 2026",
+    category: "Football Jerseys",
+    price: "R350",
+    image: "https://assets.adidas.com/images/w_940%2Cf_auto%2Cq_auto/3eec411224654aa1909480403c64b921_9366/KY2217_21_model.jpg",
+    sizes: "clothes"
+},
+    {
+        name: "Graphic T-shirt",
+        category: "T-shirts",
+        price: "R300 - R500",
+        image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+        name: "Plain T-shirt",
+        category: "T-shirts",
+        price: "R300",
+        image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+        name: "Streetwear Hoodie",
+        category: "Hoodies",
+        price: "R800 - R1000",
+        image: "https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+        name: " Galaxy Hoodie ",
+        category: "Hoodies",
+        price: "R900",
+        image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1200&auto=format&fit=crop",
+        sizes: "clothes"
+    },
+    {
+        name: "Baseball Cap",
+        category: "Caps",
+        price: "R300",
+        image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=1200&auto=format&fit=crop",
+        sizes: "caps"
+    },
+    {
+    name: "Nike Academy Dri-FIT Tracksuit",
+    category: "Tracksuits",
+    price: "R800 - R1000",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco/2f3cf605-a7b0-455d-9c73-2ff6e6ace295/M%2BNK%2BDF%2BACD23%2BTRK%2BSUIT%2BK%2BBR.png",
+    sizes: "clothes"
+},
+{
+    name: "Nike Sportswear Club Fleece Tracksuit",
+    category: "Tracksuits",
+    price: "R1000",
+    image: "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/a5919f78-95b1-4257-8b2f-fad35c48898f/M%2BNK%2BCLUB%2BFLEECE%2BHDED%2BTRACK%2BGX.png",
+    sizes: "clothes"
+},
+{
+    name: "Galaxy Boy T-shirt",
+    category: "T-shirts",
+    price: "R350",
+    image: "https://static.wixstatic.com/media/2b7a19_9c66f028ea744ee1be7acfabdd6fe844~mv2.jpg",
+    sizes: "clothes"
+},{
+    name: "GALXBOY Safety Pin T-shirt",
+    category: "T-shirts",
+    price: "R350",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop",
+    sizes: "clothes"
+},
+{
+    name: "GALXBOY Mini Coin T-shirt",
+    category: "T-shirts",
+    price: "R350",
+    image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1200&auto=format&fit=crop",
+    sizes: "clothes"
+},
+{
+    name: "GALXBOY OG Wing T-shirt",
+    category: "T-shirts",
+    price: "R350",
+    image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=1200&auto=format&fit=crop",
+    sizes: "clothes"
+},
+{
+    name: "GALXBOY OG 2.0 T-shirt",
+    category: "T-shirts",
+    price: "R350",
+    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1200&auto=format&fit=crop",
+    sizes: "clothes"
+},
+];
+
+const sizeOptions = {
+    shoes: ["UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+    clothes: ["Small", "Medium", "Large", "XL", "XXL"],
+    caps: ["Small", "Medium", "Large", "Adjustable"]
+};
+
+const productList = document.getElementById("productList");
+
+products.forEach(function(product){
+    const productCard = document.createElement("div");
+    productCard.className = "product";
+
+    const options = sizeOptions[product.sizes]
+        .map(size => `<option>${size}</option>`)
+        .join("");
+
+    productCard.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <div class="product-info">
+            <h3>${product.name}</h3>
+            <p class="category">${product.category}</p>
+            <p class="price">${product.price}</p>
+
+            <select class="size">
+                <option value="">Select Size</option>
+                ${options}
+            </select>
+
+            <button class="btn order-btn"
+                data-product="${product.name}"
+                data-price="${product.price}">
+                Order Now
+            </button>
+        </div>
+    `;
+
+    productList.appendChild(productCard);
+});
+
+document.addEventListener("click", function(event){
+    if(event.target.classList.contains("order-btn")){
+        const button = event.target;
+        const product = button.dataset.product;
+        const price = button.dataset.price;
+        const size = button.parentElement.querySelector(".size").value;
+
+        if(size === ""){
+            alert("Please select a size before ordering.");
+            return;
+        }
+
+        const message = `Hello PHATHU SNEAKERS, I want to order ${product}. Price: ${price}. Size: ${size}.`;
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.open(whatsappUrl, "_blank");
+    }
+});
+</script>
+
+</body>
+</html>
